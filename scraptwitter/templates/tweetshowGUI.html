@@ -1,12 +1,70 @@
+<!DOCTYPE html>
+
+</body>
+</html>
+<div align="left"><a href="/" class="btn btn-dark" ;>Home</a></div>
 {% extends 'home.html'%}
 {% block content %}
-<h1 align="center">Your Tweets</h1>
-<div align="right"><a href="/tpost" class="btn btn-primary" style="margin-right:5%;font-size:1.5rem">Post New Tweet</a></div>
-<br />
+<style>
 
+    body {
+     background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f223ce72-c7cd-46e7-915b-40d3af21f6b7/d5gityo-321176dd-a6d4-4546-aa65-cc41d33562b7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZjIyM2NlNzItYzdjZC00NmU3LTkxNWItNDBkM2FmMjFmNmI3XC9kNWdpdHlvLTMyMTE3NmRkLWE2ZDQtNDU0Ni1hYTY1LWNjNDFkMzM1NjJiNy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.8kc3cErcA2AGqLUnTQO2mJD7ZOO5AjsHAGezow7f4as');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+
+            }
+
+
+.row{
+  height: 100px;
+  position: relative;
+
+}
+.btn-info3
+{
+
+margin: 0;
+  position: absolute;
+
+  left: 43.5%;
+border-radius: 8px;
+text-align:centre;
+font-size: 22px;
+  background-color: #4BCBEA;
+  color: white;
+  border: 2px solid #000000
+  transition-duration: 0.2s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  } /* grey */
+
+h1 {
+position: absolute;
+
+  left: 37%;
+  font-size: 60px;
+  color: White;
+}
+</style>
+<h1 style="background-color:"; ><b>Your Tweets</b></h1>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div> <a href="/tpost" class="btn btn-info3" > New Tweet </a></div>
+<br />
+<br />
+<br />
+<br />
+<br />
 <div class="card-deck">
     {% for record in records %}
-  <div class="card bg-light col-lg-5" style="background-color:#e6e6e6;padding:2%;margin:2%">
+  <div class="card bg-light col-lg-5" style="background-color:#95E0F0;padding:2%;margin:2%">
+
       <h5 class="card-title" style="font-size:2rem">{{record.tweet}}</h5>
       <div class="card-footer"   style="font-size:1.3rem">Tweet id {{ record.tweetId }}<span style="float:right">{{ record.created_at }}</span></div>
   </div>

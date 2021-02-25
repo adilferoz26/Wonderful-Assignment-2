@@ -6,10 +6,10 @@ from django.db.models import Max
 import datetime
 import praw
 # Create your views here.
-def home(request):
+def myhomepage(request):
     return render(request, 'specific_home.html')
 
-def TwitterShowData(request):
+def mytwitterdata(request):
     TESTING = False
     if not TESTING:
         #----------Authenticating webapp with Twitter-------------
@@ -48,7 +48,7 @@ def TwitterShowData(request):
     tweets = TwitterModel.objects.all().order_by('-created_at')
     return render(request, 'tweetshowGUI.html',{'records':tweets})
 
-def TwitterPostData(request):
+def postdatatwitter(request):
     if (request.method == 'POST'):
         data = request.POST
         print(data,data['tweet'])
@@ -64,11 +64,11 @@ def TwitterPostData(request):
     return render(request, "tweetpost.html")
 
 
-def RedditShowData(request):
+def showdatareddit(request):
     posts = RedditModel.objects.all().order_by('-created_at')
     return render(request, 'postshowGUI.html',{'records':posts})
 
-def RedditPostData(request):
+def postdatareddit(request):
     if (request.method == 'POST'):
         data = request.POST
         print(data,data['title'],data['post'])

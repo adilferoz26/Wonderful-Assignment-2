@@ -1,4 +1,4 @@
-"""Socialscrapper URL Configuration
+"""mysocialapp URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -18,9 +18,9 @@ from django.urls import path
 from scraptwitter import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home),
-    path('tshow/',views.TwitterShowData),
-    path('tpost/', views.TwitterPostData),
-    path('rshow/',views.RedditShowData),
-    path('rpost/', views.RedditPostData),
+    path('',views.myhomepage),
+    path('tshow/',views.mytwitterdata),
+    path('tpost/', views.postdatatwitter),
+    path('rshow/',views.showdatareddit),
+    path('rpost/', views.postdatareddit),
 ]

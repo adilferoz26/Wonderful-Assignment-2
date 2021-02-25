@@ -1,12 +1,69 @@
 {% extends 'home.html'%}
 {% block content %}
-<h1 align="center">Your Reddit Posts</h1>
-<div align="right"><a href="/rpost" class="btn btn-primary" style="margin-right:5%;font-size:1.5rem">Add New Post</a></div>
+<div align="left"><a href="/" class="btn btn-dark" ;>Home</a></div>
+<style>
+
+    body {
+     background-image: url('https://external-preview.redd.it/IUU_p3ELPbBaQRp2bCxmtIgZBgJ4_8_3b3XcvHcL1dk.jpg?auto=webp&s=28d1139ea57ef3cf09a67e1946725947701bc145');
+
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+
+            }
+
+
+.row{
+  height: 100px;
+  position: relative;
+
+}
+.btn-info7
+{
+margin: 0;
+  position: absolute;
+
+  left: 44%;
+border-radius: 8px;
+text-align:centre;
+font-size: 22px;
+  background-color: #EA3D3D;
+  color: white;
+  border: 2px solid #000000
+  transition-duration: 0.2s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  } /* grey */
+
+h1 {
+position: absolute;
+
+  left: 32%;
+  font-size: 60px;
+  color: Black;
+}
+</style>
+    <h1 style="background-color:"; align="center"><b>Your Reddit Posts</b></h1>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div align="middle"><a href="/rpost" class="btn btn-info7" >New Post</a></div>
+<br />
+<br />
+<br />
+
+<br />
 <br />
 
 <div class="card-deck">
     {% for record in records %}
-  <div class="card bg-light col-lg-5" style="background-color:#e6e6e6;padding:1% 2% 2% 2%;margin:2%">
+  <div class="card bg-light col-lg-5" style="background-color:#FCE789;padding:1% 2% 2% 2%;margin:2%">
       <h3 class="card-title" style="font-size:2rem">{{record.title}}</h3>
       <h5 class="card-body" style="font-size:1.7rem">{{record.post}}</h5>
       <div class="card-footer"   style="font-size:1.3rem"><span style="float:right">{{ record.created_at }}</span></div>

@@ -1,19 +1,69 @@
 {% extends 'home.html'%}
 {% block content %}
+<div align="left"><a href="/" class="btn btn-dark" ;>Home</a></div>
+<style>
+
+    body {
+     background-image: url('https://thumbs.dreamstime.com/z/los-angeles-california-usa-january-reddit-logo-white-background-copy-space-social-media-icon-illustrative-los-angeles-169595363.jpg');
+
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+
+            }
+
+
+.row{
+  height: 100px;
+  position: relative;
+
+}
+.btn-info6
+{
+margin: 0;
+  position: absolute;
+
+  left: 48%;
+border-radius: 8px;
+text-align:centre;
+font-size: 22px;
+  background-color: #EA3D3D;
+  color: white;
+  border: 2px solid #000000
+  transition-duration: 0.2s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  } /* grey */
+
+h1 {
+  font-size: 60px;
+  color: black;
+}
+</style>
 <div class="container" >
     <br/>
-    <h2 align="center">Post New Tweet</h2>
+        <h1 style="background-color:"; align="center">Post a new subr</h1>
+<br/>
+    <br/>
+    <br/>
+    <br/>
     <br/>
 <form action="" method="post">
     {% csrf_token %}
     <div class="form-group">
-        <label for="title"><h4>Title</h4></label>
-        <input  id="title" type="text" name="title"  class="form-control" placeholder="Title"/>
-        <label for="post"><h4>Post</h4></label>
-        <textarea  id="post" style="height:100px" type="text" name="post"  class="form-control" placeholder="Your text"></textarea>
+        <label for="title"><h4>Title of your post</h4></label>
+        <br/>
+        <input  id="title" type="text" name="title"  class="form-control" placeholder="Enter your title here"/>
+        <br/>
+        <label for="post"><h4>Content of your post</h4></label>
+        <br/>
+        <textarea  id="post" style="height:100px" type="text" name="post"  class="form-control" placeholder="Your content"></textarea>
+        <br/>
     </div>
     <br/>
-    <button type="submit" class="btn btn-info" >Proceed</button>
+    <br/>
+    <br/>
+    <br/>
+    <button type="submit" class="btn btn-info6" >Submit</button>
 
 </div>
 

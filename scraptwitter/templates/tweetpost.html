@@ -1,17 +1,67 @@
 {% extends 'home.html'%}
 {% block content %}
+<div align="left"><a href="/" class="btn btn-dark" ;>Home</a></div>
+<style>
+
+    body {
+     background-image: url('https://acmconnect.com/wp-content/uploads/2015/07/Screenshot-1276-1024x576.png');
+
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+
+            }
+
+
+.row{
+  height: 100px;
+  position: relative;
+
+}
+.btn-info4
+{
+
+
+border-radius: 8px;
+text-align:centre;
+font-size: 22px;
+  background-color: #4BCBEA;
+  color: white;
+  border: 2px solid #000000
+  transition-duration: 0.2s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  } /* grey */
+
+h1 {
+  font-size: 60px;
+  color: White;
+}
+h3 {
+  color: White;
+}
+</style>
 <div class="container" >
     <br/>
-    <h2 align="center">Post New Tweet</h2>
+    <h1 style="background-color:"; align="center"><b>Post your tweet</b></h1>
     <br/>
+    <br/>
+
+
+
 <form action="" method="post">
     {% csrf_token %}
     <div class="form-group">
-        <label for="tweet"><h4>What's Happening ?</h4></label>
-        <textarea  id="tweet" style="height:100px" type="text" name="tweet"  class="form-control" placeholder="Enter the tweet"></textarea>
+        <label for="tweet"><h3>What are you thinking today? Let us know...</h3></label>
+        <br/>
+        <br/>
+
+        <textarea  id="tweet" style="height:100px" type="text" name="tweet"  class="form-control" placeholder="Type here"></textarea>
     </div>
     <br/>
-    <button type="submit" class="btn btn-info" >Proceed</button>
+
+    <br/>
+    <br/>
+    <button type="submit" class="btn btn-info4" >Proceed</button>
 
 </div>
 

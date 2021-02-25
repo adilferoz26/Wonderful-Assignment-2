@@ -1,5 +1,5 @@
 """
-ASGI config for Socialscrapper project.
+ASGI config for mysocialapp project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Socialscrapper.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysocialapp.settings')
 
 application = get_asgi_application()
