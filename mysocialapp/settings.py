@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'mysocialapp.wsgi.application'
 
 DATABASES = {
     'default': {
-'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'qmzlnzpy',
-        'USER' : 'qmzlnzpy',
+        'USER': 'qmzlnzpy',
         'PASSWORD': 'rpWybCFJgGVfS_Ri7fdn4QpXeogvZ_Ai',
-        'HOST' : 'ziggy.db.elephantsql.com',
-        'PORT' : '5432',
+        'HOST': 'ziggy.db.elephantsql.com',
+        'PORT': '5432',
     }
 }
 
